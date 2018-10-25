@@ -18,22 +18,83 @@ body{
 	position: relative;
 }
 
-.area_cbc{
-    position: absolute;
+/*#root img{
+	position: absolute;
     width: 80%;
+    top: 45px;
     left: 50%;
     transform: translateX(-50%);
-    top: 45px;
+    z-index: -999;
+}*/
 
-    background: url(cbg.png);
-}
-.cbg{
+/*.area_cbc{*/
+/*    position: absolute;
+    width: 80%;
+    top: 45px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;*/
+
+    /*background: url(cbg.png);*/
+/*}*/
+/*.cbg{
 	width: 100%;
 	height: 100%;
-}
+}*/
 .content{
 	border: 1px solid red;
-	margin: 96px;
+	margin: 150px 96px 96px 96px;
 	width: 600px;
-	height: 928px;
+	height: 874px;
+	position: relative;
 }
+
+/*information content*/
+.dept_cse{
+	text-align: center;
+}
+.topic{
+	padding-top: 55px;
+}
+.topic h2,.topic h3{
+	text-align: center;
+}
+/*submitted by*/
+.submittedBy{
+	padding-top: 55px;
+}
+.submittedByUnder{
+	padding-left: 50px;
+}
+.submittedBy .sb2td{
+	padding-left: 30px;
+}
+/*submitted to*/
+.submittedTo{
+	padding-top: 55px;
+}
+.submittedToUnder{
+	padding-left: 50px;
+}
+.submittedTo .st2td{
+	padding-left: 30px;
+}
+
+/*signature area*/
+/*.sigArea{
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}*/
+.saleft{
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+}
+.saright{
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+
+}
+

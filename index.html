@@ -10,28 +10,78 @@
     <br><br>
 
     <!-- Button to generate PDF. -->
-    <button onclick="test()">Make PDF</button>
+    <span>go to for </span><button onclick="test()">Make PDF</button><br>
+    <span>go to for </span><button onclick="myFunction()">Print this page</button>
+
 
     <!-- Main A4 Size Area - Div to capture. -->
     <div id="root">
-
+<!-- 
       <div class="area_cbc">
-        <!-- <img class="cbg" src="cbg.png"> -->
-      </div>
+        <img class="cbg" src="cbg.png">
+      </div> -->
 
       <div class="content">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </div>
+
+
+        <!-- information content -->
+        <h1 class="dept_cse">Department <br> of <br> Computer Science & Engineering [502]</h1>
+        <div class="topic">
+          <h2>
+            <u>Topic</u>
+          </h2>
+          <h3><i>Structured Programming Language [510202]</i></h3>
+        </div>
+
+        <!-- submitted by -->
+        <div class="submittedBy">
+          <h3><b><u>Submitted By:</u></b></h3>
+          <div class="submittedByUnder">
+            <table>
+              <tr><td><b>Name</b></td><td class="sb2td"><b>: Al Mamun</b></td></tr>
+              <tr><td><b>Registration No</b></td><td class="sb2td">: 17502005152</td></tr>
+              <tr><td><b>Type</b></td><td class="sb2td">: Regular</td></tr>
+              <tr><td><b>ID</b></td><td class="sb2td">: C-10008</td></tr>
+              <tr><td><b>Batch</b></td><td class="sb2td">: 10<sup>th</sup></td></tr>
+            </table>
+          </div>
+        </div>
+
+        <!-- dubmitted to -->
+        <div class="submittedTo">
+          <h3><b><u>Submitted To:</u></b></h3>
+          <div class="submittedToUnder">
+            <table>
+              <tr><td><b>Teacher's Name</b></td><td class="st2td"><b>: Imdad Amin Nidhro</b></td></tr>
+              <tr><td><b>Designation</b></td><td class="sb2td">: </td></tr>
+            </table>
+          </div>
+        </div>
+
+
+
+      <!-- signature content -->
+      <div class="sigArea">
+        <div class="saleft">
+          <p>...............................</p>
+          <p>Teacher's Signature</p>
+        </div>
+        <div class="saright">
+          <p>...............................</p>
+          <p>Teacher's Signature</p>
+        </div>
+      </div><!-- end .sigArea -->
+
+      </div><!-- end .content -->
       
 
 
 
     </div><!-- End A4 size Area #root -->
+
+
+
+
 
 
     <!-- Include html2pdf bundle. -->
@@ -48,6 +98,13 @@
           html2canvas: { scale: 2 },
           jsPDF: {orientation: 'portrait', unit: 'in', format: 'A4', compressPDF: true}
         }).save();
+      }
+    </script>
+
+
+    <script>
+      function myFunction() {
+          window.print();
       }
     </script>
   </body>
