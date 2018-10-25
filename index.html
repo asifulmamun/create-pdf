@@ -1,8 +1,9 @@
 <!DOCTYPE HTML>
 <html>
   <head>
-    <title>html2pdf Test - Template</title>
+    <title>Northern College Bangladesh</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <!-- stylsheet -->
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
@@ -11,18 +12,18 @@
 
     <!-- Button to generate PDF. -->
     <span>go to for </span><button onclick="test()">Make PDF</button><br>
+    <!-- button for print -->
     <span>go to for </span><button onclick="myFunction()">Print this page</button>
-
 
     <!-- Main A4 Size Area - Div to capture. -->
     <div id="root">
-<!-- 
+
+      <!-- 
       <div class="area_cbc">
         <img class="cbg" src="cbg.png">
       </div> -->
 
       <div class="content">
-
 
         <!-- information content -->
         <h1 class="dept_cse">Department <br> of <br> Computer Science & Engineering [502]</h1>
@@ -58,30 +59,20 @@
           </div>
         </div>
 
-
-
-      <!-- signature content -->
-      <div class="sigArea">
-        <div class="saleft">
-          <p>...............................</p>
-          <p>Teacher's Signature</p>
-        </div>
-        <div class="saright">
-          <p>...............................</p>
-          <p>Teacher's Signature</p>
-        </div>
-      </div><!-- end .sigArea -->
+        <!-- signature content -->
+        <div class="sigArea">
+          <div class="saleft">
+            <p>...............................</p>
+            <p>Teacher's Signature</p>
+          </div>
+          <div class="saright">
+            <p>.................................</p>
+            <p>Teacher's Signature</p>
+          </div>
+        </div><!-- end .sigArea -->
 
       </div><!-- end .content -->
-      
-
-
-
     </div><!-- End A4 size Area #root -->
-
-
-
-
 
 
     <!-- Include html2pdf bundle. -->
@@ -101,11 +92,12 @@
       }
     </script>
 
-
+    <!-- print button -->
     <script>
       function myFunction() {
           window.print();
       }
     </script>
+
   </body>
 </html>

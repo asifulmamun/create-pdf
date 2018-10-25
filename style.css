@@ -52,6 +52,7 @@ body{
 /*information content*/
 .dept_cse{
 	text-align: center;
+	padding-top: 40px;
 }
 .topic{
 	padding-top: 55px;
@@ -61,7 +62,7 @@ body{
 }
 /*submitted by*/
 .submittedBy{
-	padding-top: 55px;
+	padding-top: 220px;
 }
 .submittedByUnder{
 	padding-left: 50px;
@@ -81,20 +82,16 @@ body{
 }
 
 /*signature area*/
-/*.sigArea{
-	width: 100%;
-	position: relative;
-	overflow: hidden;
-}*/
 .saleft{
 	position: absolute;
-	bottom: 0px;
-	left: 0px;
+	bottom: 30px;
+	left: 15px;
 }
 .saright{
 	position: absolute;
-	bottom: 0px;
-	right: 0px;
-
+    bottom: 5px;
+    right: 15px;
 }
-
+.saleft,.saright{
+	font-weight: bold;
+}
