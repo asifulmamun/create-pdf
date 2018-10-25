@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>html2pdf Test - Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- stylsheet -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <br><br>
+
+    <!-- Button to generate PDF. -->
+    <button onclick="test()">Make PDF</button>
+
+    <!-- Main A4 Size Area - Div to capture. -->
+    <div id="root">
+
+      <div class="area_cbc">
+        <!-- <img class="cbg" src="cbg.png"> -->
+      </div>
+
+      <div class="content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+      
+
+
+
+    </div><!-- End A4 size Area #root -->
+
+
+    <!-- Include html2pdf bundle. -->
+    <script src="js/htmlToPdf.js"></script>
+    <script>
+      function test() {
+        // Get the element.
+        var element = document.getElementById('root');
+
+        // Generate the PDF.
+        html2pdf().from(element).set({
+          margin: 0,
+          filename: 'test.pdf',
+          html2canvas: { scale: 2 },
+          jsPDF: {orientation: 'portrait', unit: 'in', format: 'A4', compressPDF: true}
+        }).save();
+      }
+    </script>
+  </body>
+</html>
