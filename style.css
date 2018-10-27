@@ -3,95 +3,19 @@
 body{
 	width: 100%;
 	height: auto;
+    background: #282923;
+
+    position: relative;
 }
 
-
-/* Main body A4 Size */
-#root{
-	width: 792px;
-	height: 1120px;
-	font-size: 16px;
-	border: 1px solid #444;
-	overflow: hidden;
+/* form content */
+#myform_ncb{
+	border: 1px solid #6D6E6A;
+	width: 320px;
 	margin: 0 auto;
-	/* extra for design*/
-	position: relative;
-}
 
-/*#root img{
 	position: absolute;
-    width: 80%;
-    top: 45px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: -999;
-}*/
-
-/*.area_cbc{*/
-/*    position: absolute;
-    width: 80%;
-    top: 45px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: -1;*/
-
-    /*background: url(cbg.png);*/
-/*}*/
-/*.cbg{
-	width: 100%;
-	height: 100%;
-}*/
-.content{
-	border: 1px solid red;
-	margin: 150px 96px 96px 96px;
-	width: 600px;
-	height: 874px;
-	position: relative;
-}
-
-/*information content*/
-.dept_cse{
-	text-align: center;
-	padding-top: 40px;
-}
-.topic{
-	padding-top: 55px;
-}
-.topic h2,.topic h3{
-	text-align: center;
-}
-/*submitted by*/
-.submittedBy{
-	padding-top: 220px;
-}
-.submittedByUnder{
-	padding-left: 50px;
-}
-.submittedBy .sb2td{
-	padding-left: 30px;
-}
-/*submitted to*/
-.submittedTo{
-	padding-top: 55px;
-}
-.submittedToUnder{
-	padding-left: 50px;
-}
-.submittedTo .st2td{
-	padding-left: 30px;
-}
-
-/*signature area*/
-.saleft{
-	position: absolute;
-	bottom: 30px;
-	left: 15px;
-}
-.saright{
-	position: absolute;
-    bottom: 5px;
-    right: 15px;
-}
-.saleft,.saright{
-	font-weight: bold;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%-50%);
 }

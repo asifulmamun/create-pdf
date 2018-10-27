@@ -1,0 +1,94 @@
+/* Global */
+*{margin:0;padding:0;}
+body{
+	width: 100%;
+	height: auto;
+}
+
+/* Main body A4 Size */
+#root{
+	width: 792px;
+	height: 1120px;
+	font-size: 16px;
+	border: 1px solid #444;
+	overflow: hidden;
+	margin: 0 auto;
+	position: relative;
+}
+
+.area_cbc{
+    width: 80%;
+    height: 80%;
+    background: url(cbg.png);
+    background-size: 95% 80%;
+    background-repeat: no-repeat;
+    background-position: top;
+    margin: 59px auto;
+}
+
+.content{
+	margin: 150px 96px 96px 96px;
+	width: 600px;
+	height: 874px;
+	position: relative;
+}
+.cn{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/*information content*/
+.dept_cse{
+	text-align: center;
+	padding-top: 70px;
+}
+.topic{
+	padding-top: 60px;
+}
+.topic h2,.topic h3{
+	text-align: center;
+}
+
+/*submitted by*/
+.submittedBy{
+	padding-top: 150px;
+	line-height: 20px;
+	letter-spacing: 0.5px;
+}
+.submittedByUnder{
+	padding-left: 50px;
+	padding-top: 10px;
+}
+.submittedBy .sb2td{
+	padding-left: 30px;
+}
+
+/*submitted to*/
+.submittedTo{
+	padding-top: 55px;
+	line-height: 20px;
+	letter-spacing: 1px;
+}
+.submittedToUnder{
+	padding-left: 50px;
+	padding-top: 10px;
+}
+.submittedTo .st2td{
+	padding-left: 30px;
+}
+
+/*signature area*/
+.saleft{
+	position: absolute;
+	bottom: 30px;
+	left: 15px;
+}
+.saright{
+	position: absolute;
+    bottom: 5px;
+    right: 15px;
+}
+.saleft,.saright{
+	font-weight: bold;
+}
