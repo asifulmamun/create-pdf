@@ -124,11 +124,11 @@ button:hover{
   }
   #root, #root * {
     visibility: visible;
-  }
+  }/*hide all element from print*/
   #root {
     position: absolute;
     left: 0;
     top: 0;
     border: none;
-  }
+  } /*show only printable id for fint*/
 }
