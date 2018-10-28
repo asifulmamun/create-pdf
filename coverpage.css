@@ -4,6 +4,30 @@ body{
 	width: 100%;
 	height: auto;
 }
+button {
+	margin: 17px auto 0px auto !important;
+	text-align: center;
+	display: block;
+	background: green;
+	color: #fff;
+	border: transparent;
+	font-size: 17px;
+	font-style: inherit;
+	width: 150px;
+	height: 50px;
+	border-radius: 3px;
+	box-shadow: 2px 4px 6px #000;
+}
+button:hover{
+	background: #f6fcf6;
+	color: #000;
+	cursor: pointer;
+	transition: 0.3s ease;
+	-webkit-transition: 0.3s ease;
+	-moz-transition: 0.3s ease;
+	-ms-transition: 0.3s ease;
+	-o-transition: 0.3s ease;
+}
 
 /* Main body A4 Size */
 #root{
@@ -91,4 +115,20 @@ body{
 }
 .saleft,.saright{
 	font-weight: bold;
+}
+
+/* print css */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #root, #root * {
+    visibility: visible;
+  }
+  #root {
+    position: absolute;
+    left: 0;
+    top: 0;
+    border: none;
+  }
 }

@@ -63,9 +63,9 @@
     <br><br>
 
     <!-- Button to generate PDF. -->
-    <span>go to for </span><button onclick="test()">Make PDF</button><br>
+    <button onclick="test()">Make PDF</button><br>
     <!-- button for print -->
-    <span>go to for </span><button onclick="myFunction()">Print this page</button>
+    <button onclick="myFunction()">Print this page</button><br><br>
 
     <!-- Main A4 Size Area - Div to capture. -->
     <div id="root">

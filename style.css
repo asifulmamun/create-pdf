@@ -79,6 +79,7 @@ body{
 	font-style: italic;
 }/*edge*/
 
+/* responsive design */
 @media screen and (max-width: 768px){
 	body{
 		background-size: 50%;
